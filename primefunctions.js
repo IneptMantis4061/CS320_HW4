@@ -20,5 +20,4 @@ function primeGen(input) {
     }
     i++;
   }
-  console.log(nums);
 }
