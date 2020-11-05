@@ -20,5 +20,21 @@ function primeGen(input) {
     }
     i++;
   }
-  console.log(nums);
+  return nums;
+}
+
+function cumulativeSum (input) {
+  const nums = [];
+  let i;
+  let j;
+  let sum;
+
+  for (i = 0; i < input.length; i++) {
+    sum = 0;
+    for (j = 0; j <= i; j++) {
+      sum += input[j];
+    }
+    nums.push(sum);
+  }
+  return nums;
 }
