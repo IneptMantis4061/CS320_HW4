@@ -102,5 +102,7 @@ function maxPrimeSum(input) {
 // Edit the value of input to change the threshold for maxPrimeSum
 const input = 1000;
 
+console.log(cumulativeSum([10,11,12,13,14]));
+
 // Call the maxPrimeSum function and print out its return value
 console.log(maxPrimeSum(input));

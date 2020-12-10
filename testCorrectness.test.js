@@ -16,6 +16,22 @@ describe('TestForCorrectness', function() {
       })
     });
 
+  describe('CumulativeSum', function() {
+    describe('Test1', function() {
+      const testNums = [1,2,3,4];
+      it('should return [1, 3, 6, 10]', function() {
+        chai.expect(cumulativeSum(testNums)).to.be.an('array').of.length(4).to.deep.equal([1,3,6,10]);
+      });
+    });
+
+    describe('Test2', function() {
+      const testNums = [10,11,12,13,14];
+      it('should return [10, 21, 33, 46, 60]', function() {
+        chai.expect(cumulativeSum(testNums)).to.be.an('array').of.length(5).to.deep.equal([10, 21, 33, 46, 60]);
+      });
+    });
+  });
+
 });
 
 
